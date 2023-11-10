@@ -5,7 +5,7 @@ Docker Container for IONOS DynDNS Update
 https://github.com/DasRed/docker-ionos-ddns
 
 ## On first run
-1. `docker run -v /LOCAL-CONFIG-PATH:/config --name ionos-ddns --network host --restart unless-stopped -d dasred/ionos-dns`
+1. `docker run -v /LOCAL-CONFIG-PATH:/config --name ionos-ddns --network host --restart unless-stopped -d dasred/ionos-ddns`
 1. `docker exec -it CONTAINER domain-connect-dyndns --config /config/config.json --domain DOMAIN setup`
 
 ## Environment Variables
