@@ -1,7 +1,7 @@
 #!/bin/bash
 
 crontab -l > /tmp/mycron
-echo "${FREQUENCY}" domain-connect-dyndns update --all --config /config/config >> /tmp/mycron
+echo "${FREQUENCY}" domain-connect-dyndns update --all --config /config/config.json >> /tmp/mycron
 crontab /tmp/mycron
 rm /tmp/mycron
 
